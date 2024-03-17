@@ -1,4 +1,3 @@
-import { stringify } from 'querystring';
 import { getAnimals } from './db';
 
 export default async function handler(req, res) {

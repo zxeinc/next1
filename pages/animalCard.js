@@ -38,6 +38,8 @@ const AnimalCardPage = () => {
             // Обработка ошибок
         });
 
+        console.log(document.URL)
+
     }, [animals]);
 
     return (
