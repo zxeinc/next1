@@ -35,7 +35,7 @@ const CreateAnimalCard = ({animalCard, setAnimalCard, setAnimals}) => {
         values.photo.fileList[0] = base64Image
 
         console.log(values)
-        fetch('/api/saveAnimalCard', {
+        fetch('https://next1-cyan.vercel.app/api/saveAnimalCard', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ const AnimalCardPage = () => {
     }
 
     useEffect(() => {
-        fetch('/api/getAnimalsCards', {
+        fetch('https://next1-cyan.vercel.app/api/getAnimalsCards', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

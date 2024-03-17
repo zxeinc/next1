@@ -10,7 +10,7 @@ const UploadPage = () => {
   const uploadToServer = async (event) => {
     const body = new FormData();
     body.append("file", image);
-    const response = await fetch("/api/upload", {
+    const response = await fetch("https://next1-cyan.vercel.app/api/upload", {
       method: "POST",
       body
     });
@@ -34,7 +34,7 @@ const UploadPage = () => {
   }
   
   React.useEffect(()=>{
-    fetch('api/getAnimals').then(data=>data.json()).then(data=>handle(data))
+    fetch('https://next1-cyan.vercel.app/api/getAnimals').then(data=>data.json()).then(data=>handle(data))
   },[]);
   
   

@@ -124,10 +124,6 @@
   padding-bottom: 20px;
 }
 
-#cardText{
-  color: white;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
