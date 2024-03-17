@@ -5,7 +5,7 @@ export default function Time() {
   const [time, setTime] = React.useState("Загрузка времени сервера...");
   React.useEffect(() => {
     const fetchTime = async () => {
-      const response = await fetch('https://next1-cyan.vercel.app/api/getServerTime');
+      const response = await fetch('/api/getServerTime');
       const data = await response.text();
       setTime(data);
     };
